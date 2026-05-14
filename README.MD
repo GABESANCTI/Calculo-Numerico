@@ -1,3 +1,2 @@
-O metodo da bisseção
+Metodo da bissecção
 
-***placeholder
