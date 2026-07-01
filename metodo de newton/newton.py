@@ -6,7 +6,7 @@ x = sp.symbols('x')
 
 #função a ser avaliada
 
-f_simbolica = 2*x - sp.sin(x) + 4  
+f_simbolica =  2*x - sp.sin(x) + 4
 
 # Passo 3: Defina o chute inicial e a tolerância do exercício
 x0 = 0.0                # Chute inicial (x0 ou x_i)
@@ -42,7 +42,7 @@ while True:
     #  Newton-Raphson
     xi_mais_1 = xi - (f_xi / df_xi)
     
-    # Cálculo do erro
+    # Cálculo do erro de transição entre os passos
     erro_atual = abs(xi_mais_1 - xi)
     
     print(f"{i:<5} | {xi:<15.8f} | {xi_mais_1:<15.8f} | {erro_atual:<15.8f}")
